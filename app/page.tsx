@@ -7,7 +7,7 @@ export default async function Home() {
   const posts = await getPosts();
 
   return (
-    <h1>npx pantera db push</h1>
+    <h1>npx pantera db push </h1>
   )
   // return <Posts posts={posts} />;
 }
