@@ -8,27 +8,22 @@ import commaNumber from "comma-number";
 
 // Image
 const rauchgPhoto = toArrayBuffer(
-  readFileSync(join(process.cwd(), "public/images/rauchg-3d4cecf.gray.jpg"))
+  readFileSync(join(process.cwd(), "public/images/rauchg.gray.jpg"))
 );
 
 // Fonts
+const fontsDir = join(process.cwd(), "fonts");
+
 const inter300 = readFileSync(
-  join(
-    process.cwd(),
-    "node_modules/@fontsource/inter/files/inter-latin-300-normal.woff"
-  )
+  join(fontsDir, "inter-latin-300-normal.woff")
 );
+
 const inter500 = readFileSync(
-  join(
-    process.cwd(),
-    "node_modules/@fontsource/inter/files/inter-latin-500-normal.woff"
-  )
+  join(fontsDir, "inter-latin-500-normal.woff")
 );
+
 const robotoMono400 = readFileSync(
-  join(
-    process.cwd(),
-    "node_modules/@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff"
-  )
+  join(fontsDir, "roboto-mono-latin-400-normal.woff")
 );
 
 export async function GET() {
