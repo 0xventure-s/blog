@@ -5,5 +5,9 @@ export const revalidate = 60;
 
 export default async function Home() {
   const posts = await getPosts();
-  return <Posts posts={posts} />;
+
+  return (
+    <h1>npx pantera db push</h1>
+  )
+  // return <Posts posts={posts} />;
 }
